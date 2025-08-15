@@ -28,7 +28,15 @@ It combines **daily check-ins**, **quick capture for tasks/ideas/notes**, and **
 
 ## 📂 Repository Structure
 
-<pre> ```text pullsar/ ├─ apex/ # Split APEX exports (app pages, shared components, etc.) ├─ db/ │ ├─ schema/ # Tables, views, seed data │ ├─ packages/ # PL/SQL package specs & bodies │ ├─ triggers/ # Database triggers │ └─ scripts/ # Deployment scripts (run_all.sql, drop_all.sql) ├─ scripts/ # Export/import helpers for APEX & DB └─ README.md ``` </pre>
+pullsar/
+├─ apex/ # Split APEX exports (app pages, shared components, etc.)
+├─ db/
+│ ├─ schema/ # Tables, views, seed data
+│ ├─ packages/ # PL/SQL package specs & bodies
+│ ├─ triggers/ # Database triggers
+│ └─ scripts/ # Deployment scripts (run_all.sql, drop_all.sql)
+├─ scripts/ # Export/import helpers for APEX & DB
+└─ README.md
 
 ---
 
