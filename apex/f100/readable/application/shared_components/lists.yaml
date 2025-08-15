@@ -1,0 +1,149 @@
+---
+- # ====== List: Navigation Menu ===============================
+  id: 8067423339887925
+  identification: 
+    name: Navigation Menu
+
+  subscription: 
+    version-number: 45084269101369
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: Home =========================================
+    id: 8079592948888077
+    label: 
+      label: Home
+
+    icon: 
+      image/icon-css-classes: fa-home
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: 
+        url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+        page: 1 # Home
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+- # ====== List: Navigation Bar ================================
+  id: 8068602164887962
+  identification: 
+    name: Navigation Bar
+
+  subscription: 
+    version-number: 45084269106993
+
+  source: 
+    type: Static Values
+
+  entries: 
+  - # ====== Entry: Install App ==================================
+    id: 8081169864888109
+    label: 
+      label: Install App
+
+    icon: 
+      image/icon-css-classes: fa-cloud-download
+
+    layout: 
+      sequence: 10
+
+    is-current: 
+      type: Never
+
+    link: 
+      target: '#action$a-pwa-install'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      2.: a-pwaInstall
+
+  - # ====== Entry: &APP_USER. ===================================
+    id: 8081333119888110
+    label: 
+      label: '&APP_USER.'
+
+    icon: 
+      image/icon-css-classes: fa-user
+
+    layout: 
+      sequence: 20
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '#'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+      2.: has-username
+
+  - # ====== Entry: --- ==========================================
+    id: 8081816651888112
+    label: 
+      label: '---'
+
+    layout: 
+      sequence: 30
+      parent-entry: '&APP_USER.' # 8081333119888110
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: separator
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
+  - # ====== Entry: Sign Out =====================================
+    id: 8082261427888114
+    label: 
+      label: Sign Out
+
+    icon: 
+      image/icon-css-classes: fa-sign-out
+
+    layout: 
+      sequence: 40
+      parent-entry: '&APP_USER.' # 8081333119888110
+
+    is-current: 
+      type: Target Page
+
+    link: 
+      target: '&LOGOUT_URL.'
+
+    click-counting: 
+      count-clicks: false
+
+    user-defined-attributes: 
+      translatable: false
+
+    server-side-condition: 
+      type: User is Authenticated (not public)
+
