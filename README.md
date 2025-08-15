@@ -28,3 +28,27 @@ It combines **daily check-ins**, **quick capture for tasks/ideas/notes**, and **
 
 ## 📂 Repository Structure
 
+pullsar/
+├─ apex/ # Split APEX exports (app pages, shared components, etc.)
+├─ db/
+│ ├─ schema/ # Tables, views, seed data
+│ ├─ packages/ # PL/SQL package specs & bodies
+│ ├─ triggers/ # Database triggers
+│ └─ scripts/ # Deployment scripts (run_all.sql, drop_all.sql)
+├─ scripts/ # Export/import helpers for APEX & DB
+└─ README.md
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+- Oracle Cloud **Always Free Autonomous Database** with APEX enabled  
+  *(or any Oracle DB 19c+ with APEX installed)*
+- [SQLcl](https://www.oracle.com/database/technologies/appdev/sqlcl.html) installed locally
+- Git
+
+### 2. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/pullsar.git
+cd pullsar
