@@ -1,4 +1,4 @@
-# -✧- PullSar -✧-
+# ✧ PullSar ✧
 
 PullSar is a personal productivity application built with Oracle APEX and PL/SQL, designed to help you focus on what matters each day.
 
