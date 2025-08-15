@@ -1,4 +1,4 @@
-# PullSar
+§# PullSar
 
 PullSar is a personal productivity application built with Oracle APEX and PL/SQL, designed to help you focus on what matters each day.
 
@@ -27,7 +27,7 @@ It combines **daily check-ins**, **quick capture for tasks/ideas/notes**, and **
 ---
 
 ## 📂 Repository Structure
-'''
+```
 pullsar/
 ├─ apex/ # Split APEX exports (app pages, shared components, etc.)
 ├─ db/
@@ -37,7 +37,8 @@ pullsar/
 │ └─ scripts/ # Deployment scripts (run_all.sql, drop_all.sql)
 ├─ scripts/ # Export/import helpers for APEX & DB
 └─ README.md
-'''
+```
+
 ---
 
 ## 🚀 Getting Started
