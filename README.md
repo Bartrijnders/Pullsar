@@ -27,7 +27,7 @@ It combines **daily check-ins**, **quick capture for tasks/ideas/notes**, and **
 ---
 
 ## 📂 Repository Structure
-
+'''
 pullsar/
 ├─ apex/ # Split APEX exports (app pages, shared components, etc.)
 ├─ db/
@@ -37,7 +37,7 @@ pullsar/
 │ └─ scripts/ # Deployment scripts (run_all.sql, drop_all.sql)
 ├─ scripts/ # Export/import helpers for APEX & DB
 └─ README.md
-
+'''
 ---
 
 ## 🚀 Getting Started
